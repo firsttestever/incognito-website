@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+  <title>Incognito</title>
+  <style>
+    body {
+      margin: 0;
+      background: rgb(51, 52, 56);
+    }
+
+    .cont-incognito {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .incognito {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(228, 228, 228);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      margin-bottom: 40px;
+      margin-right: 7px;
+      width: 595px;
+    }
+
+    .img-incognito {
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 21.5px;
+      font-weight: normal;
+      margin-bottom: 22px;
+    }
+
+    .mas-info {
+      color: rgb(116, 142, 255);
+    }
+
+    h5 {
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+      text-align: justify;
+    }
+
+    .listas {
+      display: flex;
+      flex-direction: row;
+      margin-left: 23px;
+    }
+
+    .lista1,
+    .lista2 {
+      list-style-type: disc;
+      padding-left: 17px;
+      font-size: 14px;
+    }
+
+    .cont-lista1,
+    .cont-lista2 {
+      width: 310px;
+    }
+
+    .cont-p2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .block {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(61, 63, 67);
+      border-radius: 4px;
+      padding: 15px;
+    }
+    
+    .block-txt {
+      font-size: 14px;
+    }
+
+    .toggle {
+      margin-left: 14px;
+      height: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cont-incognito">
+    <div class="incognito">
+      <img class="img-incognito" src="img.svg">
+      <h1>Estás en modo Incógnito</h1>
+      <p>Ahora puedes navegar de forma privada; las demás personas que usan este dispositivo no verán tu actividad. Sin embargo, se guardarán las descargas, los favoritos y los elementos de la lista de lectura. <a class="mas-info" href="https://support.google.com/chrome/answer/9845881?visit_id=638372996408650085-2639186194&p=incognito&rd=1">Más información</a></p>
+      <div class="listas">
+        <div class="cont-lista1">
+          <h5>Chrome no guardará la siguiente información:</h5>
+          <ol class="lista1">
+            <li>El historial de navegación</li>
+            <li>Las cookies y los datos de sitios</li>
+            <li>La información que ingreses en formularios</li>
+          </ol>
+        </div>
+        <div class="cont-lista2">
+          <h5>Es posible que tu actividad todavía sea visible para:</h5>
+          <ol class="lista2">
+            <li>Los sitios web que visitas</li>
+            <li>Tu empleador o institución educativa</li>
+            <li>El proveedor de servicios de Internet</li>
+          </ol>
+        </div>
+      </div>
+      <div class="block">
+        <p>Bloquear cookies de terceros</p>
+        <div class="cont-p2">
+          <p class="block-txt">Cuando esta opción está activada, los sitios no pueden usar cookies para rastrearte en la Web. Es posible que las características de algunos sitios no funcionen de forma adecuada.
+          </p>
+          <button class="toggle">Botón</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
